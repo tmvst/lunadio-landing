@@ -34,7 +34,25 @@ function teamDetailsReveal() {
 	}
 }
 
+function formSubmitHandler() {
+	var form = document.getElementById("contactform");
+	//var data = new FormData(form);
+	var data = {message: "Hello"};
+
+	form.onsubmit = function() {
+		console.log("Form Submit");
+
+		var request = new XMLHttpRequest();
+		request.open('POST', '//formspree.io/vestenicky@lunadio.com', true);
+		request.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
+		request.send(data);
+
+		return false;
+	}
+}
+
 ready(teamDetails);
+ready(formSubmitHandler);
 ;/**
  * Swiper 3.4.2
  * Most modern mobile touch slider and framework with hardware accelerated transitions
