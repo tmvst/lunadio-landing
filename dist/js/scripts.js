@@ -7,7 +7,6 @@ function ready(fn) {
 }
 
 function teamDetails() {
-	console.log('loaded');
 	var members = document.getElementsByClassName("js-member");
 	for(var i = 0; i < members.length; i++) {
 	   members[i].addEventListener('click', teamDetailsReveal);
@@ -15,8 +14,6 @@ function teamDetails() {
 }
 
 function teamDetailsReveal() {
-	console.log(this);
-
 	var className = "team__members__member--active";
 
 	if (this.classList) {
@@ -36,16 +33,56 @@ function teamDetailsReveal() {
 
 function formSubmitHandler() {
 	var form = document.getElementById("contactform");
-	//var data = new FormData(form);
-	var data = {message: "Hello"};
+	window.formm = form;
+	var data = {}
+
+	var foo = "vestenicky";
+	var baz = "lunadio.com";
+	var foobaz = ["//formspree.io/", foo, "@", baz].join("");
 
 	form.onsubmit = function() {
-		console.log("Form Submit");
+		var submitwrapper = document.getElementById("submitwrapper");
+		var spinner = document.getElementById("spinner");
+		spinner.style.display = "inline-block";
+
+		for (var i = 0, ii = form.length; i < ii; ++i) {
+	    var input = form[i];
+	    if (input.name) {
+	      data[input.name] = input.value;
+	    }
+	  }
 
 		var request = new XMLHttpRequest();
-		request.open('POST', '//formspree.io/vestenicky@lunadio.com', true);
-		request.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
-		request.send(data);
+		request.open('POST', foobaz, true);
+		request.setRequestHeader("Accept", "application/json");
+		request.setRequestHeader("Content-Type", "application/json; charset=UTF-8");
+		request.send(JSON.stringify(data));
+
+
+		request.onloadend = function (response) {
+			console.log(response);
+			spinner.style.display = "none";
+
+			if (response.target.status === 200) {
+				var sDiv = document.getElementById("formresult");
+				sDiv.style.height = [form.offsetHeight, "px"].join("");
+				sDiv.classList.add("contact-form__result--pre-animation");
+				form.parentNode.replaceChild(sDiv, form);
+				sDiv.style.display = "flex";
+
+				setTimeout(function() {
+					sDiv.classList.remove("contact-form__result--pre-animation");
+				}, 100);
+			} else {
+				var eDiv = document.getElementById("formerror");
+				eDiv.classList.add("contact-form__result--pre-animation");
+				eDiv.style.display = "block";
+
+				setTimeout(function() {
+					eDiv.classList.remove("contact-form__result--pre-animation");
+				}, 100);
+			}
+    };
 
 		return false;
 	}
