@@ -2136,12 +2136,27 @@ section.projects {
     left: -15rem; }
   section.projects .projects__item__mockup--gryyny {
     width: 750px; }
+    section.projects .projects__item__mockup--gryyny img {
+      z-index: 0; }
+      @media screen and (max-width: 425px) {
+        section.projects .projects__item__mockup--gryyny img {
+          transform: scale(0.7); } }
     section.projects .projects__item__mockup--gryyny video {
       position: absolute;
       transform: rotate(-38deg);
       top: 94px;
       left: 194px;
-      width: 351px; }
+      width: 351px;
+      z-index: 1; }
+      @media screen and (max-width: 425px) {
+        section.projects .projects__item__mockup--gryyny video {
+          transform: rotate(-38deg) scale(0.7);
+          top: 95px;
+          left: 196px; } }
+    @media screen and (max-width: 425px) {
+      section.projects .projects__item__mockup--gryyny {
+        margin-left: 0;
+        margin-top: 0; } }
   section.projects .projects__item__infowrapper {
     font-size: 1.4rem;
     max-width: 45rem;
