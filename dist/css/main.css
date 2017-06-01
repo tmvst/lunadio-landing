@@ -2119,6 +2119,8 @@ section.projects {
     transform: translateY(0);
     animation: floatInPlace 5s ease-in-out infinite;
     animation-delay: 1s; }
+    section.projects .projects__item__mockup img {
+      max-width: 100%; }
     @media screen and (max-width: 1200px) {
       section.projects .projects__item__mockup {
         position: static;
@@ -2132,6 +2134,14 @@ section.projects {
     right: -15rem; }
   section.projects .projects__item__mockup--left {
     left: -15rem; }
+  section.projects .projects__item__mockup--gryyny {
+    width: 750px; }
+    section.projects .projects__item__mockup--gryyny video {
+      position: absolute;
+      transform: rotate(-38deg);
+      top: 94px;
+      left: 194px;
+      width: 351px; }
   section.projects .projects__item__infowrapper {
     font-size: 1.4rem;
     max-width: 45rem;
