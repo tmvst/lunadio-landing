@@ -2390,6 +2390,20 @@ section.principles {
   margin: 40px 60px;
   border-radius: 50%; }
 
+.testimonial__link {
+  color: #b959ff;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  padding-top: 0.5rem;
+  letter-spacing: 1px;
+  font-family: "museo-sans-rounded", sans-serif;
+  border-bottom: 1px solid #b959ff;
+  font-size: .9em; }
+
+.testimonial__link:hover {
+  border-bottom: none; }
+
 section.contact {
   display: flex;
   flex-direction: column;
