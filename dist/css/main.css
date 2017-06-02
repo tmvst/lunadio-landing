@@ -1833,6 +1833,19 @@ p {
   height: 20px;
   width: 20px; }
 
+.grabbable {
+  cursor: move;
+  /* fallback if grab cursor is unsupported */
+  cursor: grab;
+  cursor: -moz-grab;
+  cursor: -webkit-grab; }
+
+/* (Optional) Apply a "closed-hand" cursor during drag operation. */
+.grabbable:active {
+  cursor: grabbing;
+  cursor: -moz-grabbing;
+  cursor: -webkit-grabbing; }
+
 html {
   font-size: 1em; }
 
@@ -2102,6 +2115,13 @@ section.team {
 .swiper-pagination-bullet-active {
   background: #9400F8; }
 
+.swiper-pagination--testimonials {
+  margin-top: 1rem; }
+  .swiper-pagination--testimonials .swiper-pagination-bullet {
+    background: #fff; }
+  .swiper-pagination--testimonials .swiper-pagination-bullet-active {
+    background: #9400F8; }
+
 section.projects {
   margin-top: 8rem; }
   @media screen and (max-width: 425px) {
@@ -2316,6 +2336,10 @@ section.principles {
         padding-left: 1rem;
         padding-right: 1rem; } }
 
+.testimonials {
+  z-index: 2;
+  position: relative; }
+
 .testimonial {
   display: flex;
   justify-content: center;
@@ -2372,8 +2396,8 @@ section.contact {
   align-items: center;
   justify-content: center;
   background: black;
-  margin-top: -4rem;
-  padding-top: 10rem; }
+  margin-top: -7rem;
+  padding-top: 14rem; }
   section.contact p {
     font-size: 1.6rem;
     margin-top: 2rem; }

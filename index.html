@@ -79,62 +79,62 @@
 	<p class="lead lead--section" data-aos="fade-up">Something that describes us as a team in a one or two sentences.</p>
 
 	<!-- Slider main container -->
-	<div class="swiper-container hide-on-bigger-than-tablet" data-aos="fade-up">
+	<div id="team-swiper" class="swiper-container hide-on-bigger-than-tablet" data-aos="fade-up">
     <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
       <!-- Slides -->
       <div class="swiper-slide">
-				<div class="team__members__member team__members__member--slide js-member">
-					<img src="dist/img/ivan.jpg" alt="Ivan Homola">
-					<div class="member__about">
-						<div>
-							<h3 class="member__about__heading">Ivan Homola</h3>
-							<span class="member__about__role">CEO</span>
-							<p class="member__about__text">Ivan fell in love with startups during his university studies. Since he was a young boy he liked to build things from scratch. His history is filled with various projects, so he knows how hard it is to create a successful product.</p>
-						</div>
-						<div>
-							<span class="member__about__skillsh">Skills</span>
-							<p class="member__about__text">strategy, project management, web technologies, marketing, basketball</p>
-						</div>
+			<div class="team__members__member team__members__member--slide js-member">
+				<img src="dist/img/ivan.jpg" alt="Ivan Homola">
+				<div class="member__about">
+					<div>
+						<h3 class="member__about__heading">Ivan Homola</h3>
+						<span class="member__about__role">CEO</span>
+						<p class="member__about__text">Ivan fell in love with startups during his university studies. Since he was a young boy he liked to build things from scratch. His history is filled with various projects, so he knows how hard it is to create a successful product.</p>
+					</div>
+					<div>
+						<span class="member__about__skillsh">Skills</span>
+						<p class="member__about__text">strategy, project management, web technologies, marketing, basketball</p>
 					</div>
 				</div>
+			</div>
       </div>
       <div class="swiper-slide">
-				<div class="team__members__member team__members__member--slide js-member">
-					<img src="dist/img/tom.jpg" alt="Tomáš Vestenický">
-					<div class="member__about">
-						<div>
-							<h3 class="member__about__heading">Tomas Vestenicky</h3>
-							<span class="member__about__role">designer, frontend developer</span>
-							<p class="member__about__text">Tom is the answer to the question <em>"Should designers code?"</em>. With his roots in frontend development he naturally shifted to designing his own interfaces. He now focuses mainly on design on literally <em>every</em> platform. Wow!</p>
-						</div>
-						<div>
-							<span class="member__about__skillsh">Skills</span>
-							<p class="member__about__text">UX & UI design, web technologies, marketing, coffee</p>
-						</div>
+			<div class="team__members__member team__members__member--slide js-member">
+				<img src="dist/img/tom.jpg" alt="Tomáš Vestenický">
+				<div class="member__about">
+					<div>
+						<h3 class="member__about__heading">Tomas Vestenicky</h3>
+						<span class="member__about__role">designer, frontend developer</span>
+						<p class="member__about__text">Tom is the answer to the question <em>"Should designers code?"</em>. With his roots in frontend development he naturally shifted to designing his own interfaces. He now focuses mainly on design on literally <em>every</em> platform. Wow!</p>
+					</div>
+					<div>
+						<span class="member__about__skillsh">Skills</span>
+						<p class="member__about__text">UX & UI design, web technologies, marketing, coffee</p>
 					</div>
 				</div>
+			</div>
       </div>
       <div class="swiper-slide">
-				<div class="team__members__member team__members__member--slide js-member">
-					<img src="dist/img/jt.jpg" alt="Jakub Tutko">
-					<div class="member__about">
-						<div>
-							<h3 class="member__about__heading">Jakub Tutko</h3>
-							<span class="member__about__role">iOS & backend developer</span>
-							<p class="member__about__text">Jakub is a very talented developer. He started with Java and C++ as he worked on big corporate projects. He then recently moved forward to mobile applications and iOS development. Jakub is very flexible to jump right in any required technology.</p>
-						</div>
-						<div>
-							<span class="member__about__skillsh">Skills</span>
-							<p class="member__about__text">iOS, PHP, Java, C++, swimming</p>
-						</div>
+			<div class="team__members__member team__members__member--slide js-member">
+				<img src="dist/img/jt.jpg" alt="Jakub Tutko">
+				<div class="member__about">
+					<div>
+						<h3 class="member__about__heading">Jakub Tutko</h3>
+						<span class="member__about__role">iOS & backend developer</span>
+						<p class="member__about__text">Jakub is a very talented developer. He started with Java and C++ as he worked on big corporate projects. He then recently moved forward to mobile applications and iOS development. Jakub is very flexible to jump right in any required technology.</p>
+					</div>
+					<div>
+						<span class="member__about__skillsh">Skills</span>
+						<p class="member__about__text">iOS, PHP, Java, C++, swimming</p>
 					</div>
 				</div>
+			</div>
       </div>
     </div>
 
 	</div>
-	<div class="swiper-pagination hide-on-bigger-than-tablet" data-aos="fade-up"></div>
+	<div id="team-pagination" class="swiper-pagination hide-on-bigger-than-tablet" data-aos="fade-up"></div>
 
 	<div class="container hide-on-tablet-and-mobile">
 		<div class="team__members">
@@ -358,12 +358,39 @@
 
 </section>
 
-<section class="testimonial testimonial--dark" data-aos="fade-up">
-  <blockquote>
-	  <p>“Working with Lunadio, we saved a lot of time and money. Effortless collaboration, fast delivery and great results!”</p>
-	  <footer>Marek Homola, Uber</footer>
-  </blockquote>
-  <img src="https://lunadio.com/wp-content/uploads/2017/01/marek_homola.jpg">
+<section class="testimonials" data-aos="fade-up">
+	<div id="testimonial-swiper" class="swiper-container">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide grabbable">
+				<div class="testimonial testimonial--dark">
+					<blockquote>
+						<p>“Working with Lunadio, we saved a lot of time and money. Effortless collaboration, fast delivery and great results!”</p>
+						<footer>Marek Homola, Uber</footer>
+					</blockquote>
+					<img src="https://lunadio.com/wp-content/uploads/2017/01/marek_homola.jpg">
+				</div>
+			</div>
+			<div class="swiper-slide grabbable">
+				<div class="testimonial testimonial--dark">
+					<blockquote>
+						<p>“Working with Lunadio, we saved a lot of time and money. Effortless collaboration, fast delivery and great results!”</p>
+						<footer>Marek Homola, Uber</footer>
+					</blockquote>
+					<img src="https://lunadio.com/wp-content/uploads/2017/01/marek_homola.jpg">
+				</div>
+			</div>
+			<div class="swiper-slide grabbable">
+				<div class="testimonial testimonial--dark">
+					<blockquote>
+						<p>“Working with Lunadio, we saved a lot of time and money. Effortless collaboration, fast delivery and great results!”</p>
+						<footer>Marek Homola, Uber</footer>
+					</blockquote>
+					<img src="https://lunadio.com/wp-content/uploads/2017/01/marek_homola.jpg">
+				</div>
+			</div>
+		</div>
+		<div id="testimonial-pagination" class="swiper-pagination swiper-pagination--testimonials"></div>
+	</div>
 </section>
 
 <section id="contact-section" class="contact" data-aos="flip-up">
@@ -431,23 +458,30 @@
 
 	smoothScroll.init();
 
-	var mySwiper = new Swiper ('.swiper-container', {
-    // Optional parameters
-    direction: 'horizontal',
-    loop: true,
+	var mySwiper = new Swiper('#team-swiper', {
+		// Optional parameters
+        direction: 'horizontal',
+        loop: true,
+        centeredSlides: true,
+        pagination: '#team-pagination',
+        breakpoints: {
+            // when window width is <= 425px
+            425: {
+                slidesPerView: 1
+            },
+            // when window width is <= 1200px
+            1200: {
+                slidesPerView: 2
+            }
+        }
+  	});
+
+	var testimonialSwiper = new Swiper('#testimonial-swiper', {
+	    direction: 'horizontal',
+		loop: true,
 		centeredSlides: true,
-		pagination: '.swiper-pagination',
-		breakpoints: {
-	    // when window width is <= 425px
-	    425: {
-	      slidesPerView: 1
-	    },
-	    // when window width is <= 1200px
-	    1200: {
-	      slidesPerView: 2
-	    }
-	  }
-  });
+		pagination: '#testimonial-pagination'
+	});
 </script>
 
 <!-- TODO: REMOVE FOR PRODUCTION  -->
