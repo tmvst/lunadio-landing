@@ -1798,23 +1798,6 @@ p {
   .hide-on-bigger-than-tablet {
     display: none; } }
 
-.footer {
-  background: black;
-  text-align: center;
-  padding-bottom: 2rem; }
-  .footer .socicons {
-    margin-bottom: 1rem; }
-    .footer .socicons a {
-      transition: opacity 250ms ease-out; }
-    .footer .socicons a:hover {
-      text-decoration: none;
-      opacity: .8; }
-    .footer .socicons img {
-      width: 2rem; }
-  .footer p {
-    margin-bottom: 0;
-    font-size: .8rem; }
-
 .href {
   color: #9400F8;
   font-weight: 500;
@@ -1879,6 +1862,9 @@ h1, .h1 {
   color: #84FDE1;
   text-shadow: 0 0 25px rgba(132, 253, 225, 0.25);
   transform: translate3d(0, 0, 1px); }
+
+.h1--smaller {
+  font-size: 2.827em; }
 
 h2, .h2 {
   font-size: 2.827em; }
@@ -2154,7 +2140,10 @@ section.projects {
     right: -15rem; }
   section.projects .projects__item__mockup--left {
     left: -15rem; }
+  section.projects .projects__item__mockup--hometown {
+    animation-delay: 2s; }
   section.projects .projects__item__mockup--gryyny {
+    animation-delay: 3s;
     width: 750px; }
     section.projects .projects__item__mockup--gryyny img {
       z-index: 0; }
@@ -2470,5 +2459,24 @@ section.contact {
 
 .contact-form__spinnerwrapper .loading-spinner {
   align-self: flex-end; }
+
+.footer {
+  background: black;
+  text-align: center;
+  padding-bottom: 2rem;
+  padding-top: 4rem; }
+  .footer .socicons {
+    margin-bottom: 1rem;
+    margin-top: 1.5rem; }
+    .footer .socicons a {
+      transition: opacity 250ms ease-out; }
+    .footer .socicons a:hover {
+      text-decoration: none;
+      opacity: .8; }
+    .footer .socicons img {
+      width: 4rem; }
+  .footer p {
+    margin-bottom: 0;
+    font-size: .8rem; }
 
 /*# sourceMappingURL=main.css.map */
