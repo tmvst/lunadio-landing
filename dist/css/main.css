@@ -2040,6 +2040,9 @@ section.team {
       transition: all 250ms ease-out;
       display: block;
       vertical-align: middle; }
+    section.team .team__members__member:hover .member__morelink {
+      opacity: 1;
+      transform: translateY(0) scale(1); }
     section.team .team__members__member:hover img {
       opacity: .7; }
   section.team .team__members__member--slide {
@@ -2051,6 +2054,23 @@ section.team {
     transform: translateY(0); }
   section.team .team__members__member--active img {
     transform: scale(0.8); }
+  section.team .team__members__member--active .member__morelink {
+    transform: translateY(20px) scale(0.9) !important;
+    opacity: 0 !important; }
+  section.team .member__morelink {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    margin-bottom: 0;
+    line-height: 4rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: "museo-sans-rounded", sans-serif;
+    transition: all 150ms ease-out;
+    transform: translateY(20px) scale(0.9);
+    opacity: 0; }
   section.team .member__about {
     position: absolute;
     top: 0;
