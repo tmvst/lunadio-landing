@@ -2137,6 +2137,18 @@ section.team {
     @media screen and (max-width: 1200px) {
       section.team .achievement__text {
         padding: 0 1rem; } }
+  section.team .achievement__link {
+    color: #b959ff;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    padding-top: .5rem;
+    letter-spacing: 1px;
+    font-family: "museo-sans-rounded", sans-serif;
+    border-bottom: 1px solid #b959ff;
+    font-size: .9em; }
+    section.team .achievement__link:hover {
+      border-bottom: none; }
 
 .swiper-container {
   width: 100%; }
