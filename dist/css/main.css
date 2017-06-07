@@ -2107,6 +2107,36 @@ section.team {
   section.team .member__about__skillsh {
     font-weight: 700;
     font-family: "museo-sans-rounded", sans-serif; }
+  section.team .team__achievements {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 8rem; }
+    @media screen and (max-width: 425px) {
+      section.team .team__achievements {
+        flex-direction: column; } }
+  section.team .team__achievements__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; }
+    @media screen and (max-width: 425px) {
+      section.team .team__achievements__item {
+        margin-bottom: 4rem; } }
+  section.team .achievement__heading {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1.5rem; }
+  section.team .achievement__text {
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 0 3rem;
+    margin-bottom: 0.5rem; }
+    @media screen and (max-width: 1200px) {
+      section.team .achievement__text {
+        padding: 0 1rem; } }
 
 .swiper-container {
   width: 100%; }
