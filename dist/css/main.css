@@ -1894,6 +1894,9 @@ p.lead--section {
 p.lead--smaller {
   font-size: 1.4rem;
   margin-bottom: 2rem; }
+  @media screen and (min-width: 1200px) {
+    p.lead--smaller {
+      padding: 0 1rem; } }
 
 .btn {
   color: white;
@@ -2180,15 +2183,18 @@ section.team {
   max-width: 55rem;
   left: 50%;
   transform: translate(-50%, 0);
-  z-index: 10; }
+  z-index: 10;
+  pointer-events: none; }
 
 .swiper-button-prev {
   background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 27 44'%3E%3Cpath d='M0 22L22 0l2.1 2.1L4.2 22l19.9 19.9L22 44 0 22z' fill='%233C415A'/%3E%3C/svg%3E");
-  transform: scale(0.6); }
+  transform: scale(0.6);
+  pointer-events: auto; }
 
 .swiper-button-next {
   background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 27 44'%3E%3Cpath d='M27 22L5 44l-2.1-2.1L22.8 22 2.9 2.1 5 0l22 22z' fill='%233C415A'/%3E%3C/svg%3E");
-  transform: scale(0.6); }
+  transform: scale(0.6);
+  pointer-events: auto; }
 
 section.projects {
   margin-top: 8rem; }
@@ -2355,7 +2361,7 @@ section.projects {
     border: 0; }
 
 section.principles {
-  margin-top: 12rem;
+  margin-top: 14rem;
   display: flex;
   flex-direction: column;
   align-items: center; }
@@ -2409,7 +2415,9 @@ section.principles {
 
 .testimonials {
   z-index: 2;
-  position: relative; }
+  position: relative;
+  margin-top: 4rem;
+  margin-bottom: 4rem; }
 
 .testimonial {
   display: flex;
@@ -2422,7 +2430,7 @@ section.principles {
 
 .testimonial--dark {
   background: #222533;
-  box-shadow: 0 -10px 18px 0 rgba(0, 0, 0, 0.35);
+  box-shadow: 0 0 18px 5px rgba(34, 37, 50, 0.48);
   color: white; }
 
 .testimonial--light {
