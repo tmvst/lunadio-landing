@@ -2112,6 +2112,16 @@ section.team {
   section.team .member__about__skillsh {
     font-weight: 700;
     font-family: "museo-sans-rounded", sans-serif; }
+  section.team .member__about__link {
+    color: #b959ff;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    letter-spacing: 1px;
+    font-family: "museo-sans-rounded", sans-serif;
+    border-bottom: 1px solid #b959ff; }
+    section.team .member__about__link:hover {
+      border-bottom: 1px solid black; }
   section.team .team__achievements {
     display: flex;
     flex-direction: row;
