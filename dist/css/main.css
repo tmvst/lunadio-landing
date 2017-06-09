@@ -2126,7 +2126,7 @@ section.team {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    justify-content: space-between;
+    justify-content: center;
     margin-top: 8rem; }
     @media screen and (max-width: 425px) {
       section.team .team__achievements {
@@ -2135,9 +2135,11 @@ section.team {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start; }
+    justify-content: flex-start;
+    width: 33%; }
     @media screen and (max-width: 425px) {
       section.team .team__achievements__item {
+        width: auto;
         margin-bottom: 4rem; } }
   section.team .achievement__heading {
     text-align: center;
