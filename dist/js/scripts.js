@@ -36,7 +36,7 @@ function formSubmitHandler() {
 	window.formm = form;
 	var data = {}
 
-	var foo = "vestenicky";
+	var foo = "talk";
 	var baz = "lunadio.com";
 	var foobaz = ["//formspree.io/", foo, "@", baz].join("");
 
