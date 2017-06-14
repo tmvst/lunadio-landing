@@ -1866,6 +1866,10 @@ h1, .h1 {
 .h1--smaller {
   font-size: 2.827em; }
 
+.h1--awards {
+  color: white;
+  margin-top: 8rem; }
+
 h2, .h2 {
   font-size: 2.827em; }
 
@@ -2127,7 +2131,7 @@ section.team {
     flex-direction: row;
     align-items: flex-start;
     justify-content: center;
-    margin-top: 8rem; }
+    margin-top: 4rem; }
     @media screen and (max-width: 425px) {
       section.team .team__achievements {
         flex-direction: column; } }
